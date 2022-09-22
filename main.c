@@ -87,11 +87,10 @@ int LogicalOROperator(int a, int b)
     return a && b;
 }
 
-
 int main()
 {
     printf("Hello World\n");
-    int a, b, c, d, e, f, g, h, i, j, k,l;
+    int a, b, c, d, e, f, g, h, i, j, k, l;
     int x, y;
     x = 500;
     y = 10;
