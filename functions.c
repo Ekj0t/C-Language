@@ -16,7 +16,6 @@ int main()
     d = takenumber();
     printf("The number entered is: %d", d);
 
-
     return 0;
 }
 // With arguments and with return value.

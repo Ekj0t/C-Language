@@ -1,12 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(int argc, char const *argv[])
 {
-    int a=3;
-    float b = (float) 54/5;
+    int a = 3;
+    float b = (float)54 / 5;
     // typecasting is used to change one data
-    // Typecasting syntax : 
+    // Typecasting syntax :
     //                      (Type) value
-    printf("The value of a is %f\n",b);
+    printf("The value of a is %f\n", b);
     return 0;
 }
