@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    label:
-        printf("Hello guys\n");
-        printf("We are inside label\n");
+label:
+    printf("Hello guys\n");
+    printf("We are inside label\n");
     // goto end; // directing to end
     printf("Hello World\n");
     // goto label;
-    
+
     int num;
     for (int i = 0; i < 8; i++)
     {
@@ -18,14 +18,12 @@ int main()
             scanf("%d", &num);
             if (num == 0)
             {
-                //break;
+                // break;
                 goto end;
             }
-            
         }
-        
     }
-    end:
-        printf("This is the end\n");
+end:
+    printf("This is the end\n");
     return 0;
 }

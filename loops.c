@@ -22,11 +22,10 @@ int main()
 
     // For Loop
     int j;
-    for ( j = 0; j <= num; j++) // it will take only the last expression in second expression as default and work accordingly.
+    for (j = 0; j <= num; j++) // it will take only the last expression in second expression as default and work accordingly.
     {
         printf("%d\n", j);
     }
-    
 
     return 0;
 }
