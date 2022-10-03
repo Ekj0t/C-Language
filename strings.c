@@ -1,11 +1,12 @@
 #include <stdio.h>
-
-void Printstr(char str[])
+// A string is a null terminated character.
+// Strings are no Datatypes
+void Printstr(char string[])
 {
     int i = 0;
-    while (str[i] != '\0')
+    while (string[i] != '\0')
     {
-        printf("%c", str[i]);
+        printf("%c", string[i]);
         i++;
     }
     printf("\n");
