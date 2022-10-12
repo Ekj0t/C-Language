@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 
 struct Student
 {
     int id;
     int marks;
     char fav_char;
+    char name[100];
 };
 
 int main()
@@ -21,6 +23,9 @@ int main()
     xyz.fav_char = 'X';
 
     printf("Ekjot got %d marks\n", Ekjot.marks);
+    strcpy(Ekjot.name, "Ekjot Singh");
+    printf("Ekjot's full name is: %s\n", Ekjot.name);
+
 
     return 0;
 }
