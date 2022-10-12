@@ -8,6 +8,7 @@ struct Student
     char fav_char;
     char name[100];
 };
+// struct Student Ekjot, Navjot, xyz;
 
 int main()
 {
