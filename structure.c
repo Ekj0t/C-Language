@@ -26,7 +26,7 @@ int main()
     strcpy(Ekjot.name, "Ekjot Singh");
     printf("Ekjot's full name is: %s\n", Ekjot.name);
 
-    // Quick Quiz 
+    // Quick Quiz
     // Print all the information of any student
     strcpy(Navjot.name, "Navjot Kaur");
     printf("Printing all the information of Navjot:\n");
