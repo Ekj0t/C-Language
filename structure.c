@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
+// We use structures to make the program effiecient by removing 
+//the need to make seperate datatypes and variables for specific work
+// Like: Data Management, etc.
 struct Student
 {
     int id;
