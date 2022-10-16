@@ -23,25 +23,22 @@ void parser(char *string)
             string[index] = string[i];
             index++;
         }
-    } // Printed string with spaces
-    string[index] = '\0';// Ended the string
+    }                     // Printed string with spaces
+    string[index] = '\0'; // Ended the string
     // Removing the spaces from the begining
-    while (string[0]== ' ')
+    while (string[0] == ' ')
     {
         // Shift the string to the left
         for (int i = 0; i < strlen(string); i++)
         {
-            string[i] = string[i+1];
+            string[i] = string[i + 1];
         }
-        
     }
     // Removing the spaces from the end
-    while (string[strlen(string) -1]==' ')
+    while (string[strlen(string) - 1] == ' ')
     {
-        string[strlen(string) -1] ='\0';
+        string[strlen(string) - 1] = '\0';
     }
-    
-    
 }
 
 int main()
