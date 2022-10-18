@@ -29,5 +29,29 @@ int main()
     // Dynamically allocate the character array.
     // take input from user
 
+    int eId;
+    char *ptr;
+    char a, b;
+    int i = 0;
+    while (i < 3)
+    {
+        printf("Employee %d:Enter no of characters in your eId\n", i + 1);
+        scanf("%d", &eId);
+        getchar();
+        printf("Enter the value of a\n");
+        scanf("%c", &a);
+        getchar();
+        printf("Enter the value of b\n");
+        scanf("%c", &b);
+        ptr = (char *)malloc((eId + 1) * sizeof(char));
+
+        printf("Enter the Employee Id\n");
+        scanf("%s", ptr);
+        printf("You Employee Id is %s\n", ptr);
+        free(ptr);
+
+        i++;
+    }
+
     return 0;
 }
