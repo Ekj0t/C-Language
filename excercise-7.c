@@ -89,22 +89,21 @@ int main()
             PlayerScore += 1;
             printf("You won\na");
         }
-    printf("You: %d Computer: %d\n", PlayerScore, ComputerScore);
-    if (PlayerScore > ComputerScore)
-    {
-        printf("Congratulations, You Won!!!\n");
-    }
-    else if (PlayerScore < ComputerScore)
-    {
+        printf("You: %d Computer: %d\n", PlayerScore, ComputerScore);
+        if (PlayerScore > ComputerScore)
+        {
+            printf("Congratulations, You Won!!!\n");
+        }
+        else if (PlayerScore < ComputerScore)
+        {
 
-        printf("Computer, You Won!!!\n");
+            printf("Computer, You Won!!!\n");
+        }
+        else
+        {
+            printf("Its a draw.\n");
+        }
     }
-    else
-    {
-        printf("Its a draw.\n");
-    }
-    }
-
 
     return 0;
 }
