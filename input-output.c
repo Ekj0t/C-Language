@@ -39,8 +39,8 @@ int main()
     fprintf(ptr, "%s", string);
 
     FILE *xyz = NULL;
-    xyz = fopen("testfile.txt", "r+");
-    char *c = fgetc(xyz);
+    xyz = fopen("myfile.txt", "r+");
+    char c = fgetc(xyz);
     printf("The character I read was %c\n", c);
     c = fgetc(xyz);
     printf("The character I read was %c\n", c);
