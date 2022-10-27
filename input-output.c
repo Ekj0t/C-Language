@@ -10,10 +10,15 @@ In C we can perform these high level operations on files:
 Different modes of file handling in C are:
 1."r" for read
 2."w" for write
-3."rb" for read in binary
-4."a" for adding to existing file
+3."a" for adding to existing file
+4."r+" for both reading and writing
+5."w+" for read and write, initializes file to zero and creates one if it not exists
+6."a+" for opens a file both read and write, reading will start from beggining but we can only append to file
+
 */
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
@@ -32,6 +37,22 @@ int main()
     // Writing to existing file and adding data
     ptr = fopen("myfile.txt", "a");
     fprintf(ptr, "%s", string);
+
+    FILE *xyz = NULL;
+    xyz = fopen("testfile.txt", "r+");
+    char *c = fgetc(xyz);
+    printf("The character I read was %c\n", c);
+    c = fgetc(xyz);
+    printf("The character I read was %c\n", c);
+
+    char str[4];
+    fgets(str, 5, xyz);
+    printf("The string is %s\n", str);
+
+    fputc('o', xyz);
+    fputs("this is harry", xyz);
+
+    fclose(xyz);
 
     return 0;
 }
