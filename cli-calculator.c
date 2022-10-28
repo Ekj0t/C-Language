@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     // printf("Num1 is %d\n", num1);
     // printf("Num2 is %d\n", num2);
 
+    // 0(zero) means same and 1(one) means not same
     if (strcmp(operation, "add") == 0)
     {
         printf("add: %d\n", num1 + num2);
